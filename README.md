@@ -1,3 +1,3 @@
 # Study-Notion
  
-Live link : https://effulgent-zuccutto-fdc992.netlify.app
+Live link : https://skillneststudynotion.netlify.app/
