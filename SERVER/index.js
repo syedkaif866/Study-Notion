@@ -21,12 +21,15 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-	cors({
-		origin:"http://localhost:3000",
-		credentials:true,
-	})
-)
+const cors = require('cors');
+
+const corsOptions = {
+  origin: ['http://localhost:3000', 'https://study-notionfrontend-pi.vercel.app'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the necessary HTTP methods
+  credentials: true, // If you're dealing with credentials (like cookies)
+};
+
+app.use(cors(corsOptions));
 
 app.use(
 	fileUpload({
