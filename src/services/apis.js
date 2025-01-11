@@ -1,6 +1,6 @@
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
-condole.log("base url: ",BASE_URL);
+console.log("base url: ",BASE_URL);
 
 // AUTH ENDPOINTS
 export const endpoints = {
