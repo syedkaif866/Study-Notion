@@ -25,7 +25,7 @@ exports.resetPasswordToken = async (req, res) => {
 		);
 		console.log("DETAILS", updatedDetails);
 
-		const url = `https://skillneststudynotion.netlify.app/update-password/${token}`;
+		const url = `https://delicate-puffpuff-0d25a1.netlify.app/update-password/${token}`;
 
 		await mailSender(
 			email,
